@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3001;
-const apiRoutes = require('./route/apiroute');
-const htmlRoutes = require('./route/htmlroute');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlrRoutes');
 
 app.use(express.static('public'));
 // parse incoming string or array data
