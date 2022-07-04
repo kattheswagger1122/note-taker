@@ -6,7 +6,7 @@ const router = require('express').Router();
 const notesRoutes = require('./noteRoutes')
 
 //"The router.use() function uses the specified middleware function or functions. It basically mounts middleware for the routes which are being served by the specific router."
-router.use(notesRoutes);
+router.use('/api', notesRoutes)
 
 
 //module.exports=router is mapping a router 
